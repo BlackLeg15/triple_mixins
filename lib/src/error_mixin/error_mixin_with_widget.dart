@@ -3,8 +3,8 @@ import 'package:flutter_triple/flutter_triple.dart';
 
 mixin ErrorMixinWithWidget<T extends StatefulWidget> on State<T> {
   Store<Object, Object> get tripleStore;
-  Widget get onStateWidgetForErrorMixin;
-  Widget get onErrorWidgetForErrorMixin;
+  Widget get onStateWidgetWhenNotError;
+  Widget get onErrorWidget;
   late Widget finalPageForErrorMixin;
 
   @override
@@ -12,7 +12,7 @@ mixin ErrorMixinWithWidget<T extends StatefulWidget> on State<T> {
     super.initState();
     finalPageForErrorMixin = TripleBuilder(
       store: tripleStore,
-      builder: (context, triple) => triple.error != null ? onErrorWidgetForErrorMixin : onStateWidgetForErrorMixin,
+      builder: (context, triple) => triple.error != null ? onErrorWidget : onStateWidgetWhenNotError,
     );
   }
 }

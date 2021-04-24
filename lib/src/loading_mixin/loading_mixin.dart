@@ -3,8 +3,8 @@ import 'package:flutter_triple/flutter_triple.dart';
 
 mixin LoadingMixin<T extends StatefulWidget> on State<T> {
   Store<Object, Object> get tripleStore;
-  Widget get onStateWidgetForLoadingMixin;
-  Widget get onLoadingWidgetForLoadingMixin;
+  Widget get onStateWidgetWhenNotLoading;
+  Widget get onLoadingWidget;
   late Widget finalPageForLoadingMixin;
 
   @override
@@ -12,7 +12,7 @@ mixin LoadingMixin<T extends StatefulWidget> on State<T> {
     super.initState();
     finalPageForLoadingMixin = TripleBuilder(
       store: tripleStore,
-      builder: (context, triple) => triple.isLoading ? onLoadingWidgetForLoadingMixin : onStateWidgetForLoadingMixin,
+      builder: (context, triple) => triple.isLoading ? onLoadingWidget : onStateWidgetWhenNotLoading,
     );
   }
 }
