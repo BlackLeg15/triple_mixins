@@ -12,3 +12,4 @@
 
 * Dart files formatted with dartfmt
 * Example in main.dart
+* Documentation
