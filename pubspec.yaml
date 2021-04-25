@@ -2,7 +2,6 @@ name: triple_mixins
 description: A set of mixins created to improve development with triple package
 version: 0.0.1
 author: Adby Santos
-homepage: null
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -11,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  asuka: 2.0.0-nullsafety.2
   flutter_triple: ^1.0.5+1
 
 dev_dependencies:
