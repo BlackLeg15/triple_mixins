@@ -1,7 +1,7 @@
 name: triple_mixins
-description: A set of mixins created to improve development with triple package
+description: A set of mixins created to improve development with Triple package
 version: 0.0.1
-author: Adby Santos
+homepage: https://github.com/BlackLeg15/triple_mixins
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -15,5 +15,3 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-flutter: null
