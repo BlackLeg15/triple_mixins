@@ -12,7 +12,8 @@ mixin ErrorMixinWithWidget<T extends StatefulWidget> on State<T> {
     super.initState();
     finalPageForErrorMixin = TripleBuilder(
       store: tripleStore,
-      builder: (context, triple) => triple.error != null ? onErrorWidget : onStateWidgetWhenNotError,
+      builder: (context, triple) =>
+          triple.error != null ? onErrorWidget : onStateWidgetWhenNotError,
     );
   }
 }

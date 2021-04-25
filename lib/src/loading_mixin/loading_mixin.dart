@@ -12,7 +12,8 @@ mixin LoadingMixin<T extends StatefulWidget> on State<T> {
     super.initState();
     finalPageForLoadingMixin = TripleBuilder(
       store: tripleStore,
-      builder: (context, triple) => triple.isLoading ? onLoadingWidget : onStateWidgetWhenNotLoading,
+      builder: (context, triple) =>
+          triple.isLoading ? onLoadingWidget : onStateWidgetWhenNotLoading,
     );
   }
 }

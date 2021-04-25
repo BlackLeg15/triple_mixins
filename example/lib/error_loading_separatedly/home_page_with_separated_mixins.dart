@@ -8,10 +8,13 @@ class HomePageWithSeparatedMixins extends StatefulWidget {
   const HomePageWithSeparatedMixins({Key? key}) : super(key: key);
 
   @override
-  _HomePageWithSeparatedMixinsState createState() => _HomePageWithSeparatedMixinsState();
+  _HomePageWithSeparatedMixinsState createState() =>
+      _HomePageWithSeparatedMixinsState();
 }
 
-class _HomePageWithSeparatedMixinsState extends State<HomePageWithSeparatedMixins> with LoadingMixin, ErrorMixinWithWidget {
+class _HomePageWithSeparatedMixinsState
+    extends State<HomePageWithSeparatedMixins>
+    with LoadingMixin, ErrorMixinWithWidget {
   @override
   HomePageStore get tripleStore => HomePageStore();
 
@@ -19,14 +22,17 @@ class _HomePageWithSeparatedMixinsState extends State<HomePageWithSeparatedMixin
   Widget build(BuildContext context) => finalPageForErrorMixin;
 
   @override
-  Widget get onErrorWidget => const Center(child: const Text('An error just ocurred'));
+  Widget get onErrorWidget =>
+      const Center(child: const Text('An error just ocurred'));
 
   @override
   Widget get onStateWidgetWhenNotError => finalPageForLoadingMixin;
 
   @override
-  Widget get onLoadingWidget => const Center(child: const CircularProgressIndicator());
+  Widget get onLoadingWidget =>
+      const Center(child: const CircularProgressIndicator());
 
   @override
-  Widget get onStateWidgetWhenNotLoading => OnStateWidget(tripleStore: tripleStore);
+  Widget get onStateWidgetWhenNotLoading =>
+      OnStateWidget(tripleStore: tripleStore);
 }

@@ -1,6 +1,6 @@
 name: triple_mixins
 description: A set of mixins created to improve development with Triple package
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/BlackLeg15/triple_mixins
 
 environment:
