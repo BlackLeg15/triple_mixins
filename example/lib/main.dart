@@ -30,7 +30,8 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> with LoadingMixin, ErrorMixinWithWidget {
+class _HomePageState extends State<HomePage>
+    with LoadingMixin, ErrorMixinWithWidget {
   @override
   Widget build(BuildContext context) => finalPageForErrorMixin;
 

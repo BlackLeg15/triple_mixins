@@ -8,6 +8,7 @@
 
 * fixing README
 
-## [0.0.3] - Second release
+## [0.0.3] - Increasing pub points
 
 * Dart files formatted with dartfmt
+* Example in main.dart
