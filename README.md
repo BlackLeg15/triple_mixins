@@ -1,6 +1,6 @@
 # triple_mixins
 
-A set of mixins created to improve development with Triple package
+A set of mixins created to improve development with Triple package.
 
 ## Meet Triple now!
 
