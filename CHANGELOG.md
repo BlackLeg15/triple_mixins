@@ -3,3 +3,7 @@
 * LoadingMixin.
 * ErrorMixin.
 * LoadingErrorMixin.
+
+## [0.0.2] - First release
+
+* fixing README
